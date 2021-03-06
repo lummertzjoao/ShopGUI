@@ -1,0 +1,5 @@
+name: ShopGUI
+main: io.github.lummertzjoao.shopgui.ShopGui
+version: 1.0
+api-version: 1.16
+author: w1zD_
