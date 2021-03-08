@@ -30,7 +30,9 @@ public class ShopMenu extends PaginatedMenu {
         Material type = event.getCurrentItem().getType();
         Player player = (Player) event.getWhoClicked();
 
-        if (type == Material.DARK_OAK_DOOR) {
+        if (type == Material.NETHER_STAR) {
+            new AdminPanelMenu(playerMenuUtility, plugin).open();
+        } else if (type == Material.DARK_OAK_DOOR) {
             player.closeInventory();
         }
     }

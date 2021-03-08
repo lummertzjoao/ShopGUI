@@ -1,9 +1,13 @@
-io/github/lummertzjoao/shopgui/model/entity/Category.class
 io/github/lummertzjoao/shopgui/ShopGui.class
-io/github/lummertzjoao/shopgui/menumanager/menu/ShopMenu.class
-io/github/lummertzjoao/shopgui/model/entity/ShopItem.class
 io/github/lummertzjoao/shopgui/model/entity/Subcategory.class
+io/github/lummertzjoao/shopgui/model/entity/MenuItem.class
+io/github/lummertzjoao/shopgui/listener/MenuListener.class
+io/github/lummertzjoao/shopgui/menumanager/menu/AdminPanelMenu$1.class
+io/github/lummertzjoao/shopgui/menumanager/PaginatedMenu.class
+io/github/lummertzjoao/shopgui/model/entity/Category.class
+io/github/lummertzjoao/shopgui/menumanager/menu/ShopMenu.class
+io/github/lummertzjoao/shopgui/menumanager/menu/AdminPanelMenu.class
 io/github/lummertzjoao/shopgui/menumanager/PlayerMenuUtility.class
 io/github/lummertzjoao/shopgui/command/ShopCommand.class
+io/github/lummertzjoao/shopgui/model/entity/Product.class
 io/github/lummertzjoao/shopgui/menumanager/Menu.class
-io/github/lummertzjoao/shopgui/menumanager/PaginatedMenu.class
