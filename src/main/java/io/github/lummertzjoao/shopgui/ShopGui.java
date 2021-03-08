@@ -1,5 +1,7 @@
 package io.github.lummertzjoao.shopgui;
 
+import io.github.lummertzjoao.shopgui.command.ShopCommand;
+import io.github.lummertzjoao.shopgui.listener.MenuListener;
 import io.github.lummertzjoao.shopgui.menumanager.PlayerMenuUtility;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -13,6 +15,9 @@ public class ShopGui extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getCommand("shop").setExecutor(new ShopCommand(this));
+        getServer().getPluginManager().registerEvents(new MenuListener(), this);
+
         getLogger().info("The plugin has been enabled successfully!");
     }
 

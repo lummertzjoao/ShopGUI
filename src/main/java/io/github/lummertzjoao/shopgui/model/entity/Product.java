@@ -1,18 +1,14 @@
 package io.github.lummertzjoao.shopgui.model.entity;
 
-import java.util.HashSet;
-import java.util.Set;
-
-public class Category extends MenuItem {
+public class Product extends MenuItem {
 
     private String name;
+    private double price;
 
-    private final Set<Product> products = new HashSet<>();
-    private final Set<Subcategory> subcategories = new HashSet<>();
-
-    public Category(String name, MenuItem menuItem) {
+    public Product(String name, double price, MenuItem menuItem) {
         super(menuItem.getSlot(), menuItem.getIcon(), menuItem.getLore());
         this.name = name;
+        this.price = price;
     }
 
     public String getName() {
@@ -21,5 +17,13 @@ public class Category extends MenuItem {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
